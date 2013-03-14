@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <title>{% block title 'Accueil' %} - TCS Etude de case</title>
-        <link href="{{ app.request.basepath }}/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <script src="{{ app.request.basepath }}/js/bootstrap.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Julien Brochet, Grégoire Mirebeau, Cyril Monsieux, Tung Nguyen">
+        <title>{% block title 'Accueil' %} - TCS</title>
+
+        <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="/css/layout.css" rel="stylesheet" type="text/css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/js/bootstrap.js"></script>
+        <!--[if lt IE 9]>
+          <script src="../assets/js/html5shiv.js"></script>
+        <![endif]-->
     </head>
     <body>
-        {% block content %}{% endblock %}
+        <div class="container">
+            <div class="masthead">
+                <h3 class="muted">Nom de notre compagnie</h3>
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container">
+                            <ul class="nav">
+                                <li class="active"><a href="#">Accueil</a></li>
+                                <li><a href="#">Plans</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- /.navbar -->
+            </div> <!-- /.masthead -->
+
+            <div class="main-container">
+                {% block content %}{% endblock %}
+            </div>
+            <hr>
+            <footer>
+                <p>&copy; Nom de notre compagnie 2013</p>
+            </footer>
+        </div>
     </body>
 </html>
