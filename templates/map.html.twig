@@ -1,8 +1,14 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+<div class="alert alert-info">
+    Voici le plan des <strong>Quatre Vents</strong>. Vous avez la possibilité d'afficher ou de masquer
+    un certain nombre d'éléments via la légende à droite dynamiquement.
+</div>
+
 <div class="row">
     <div class="span9">
+        <h3>Plan des Quatre Vents</h3>
         <div class="map-container">
             <img id="layer-1" class="layer" src="/images/map/1.png" />
             <img id="layer-2" class="layer" src="/images/map/2.png" />
@@ -11,18 +17,21 @@
         </div>
     </div>
     <div class="span3">
-        <label class="checkbox">
-            <input type="checkbox" class="layer-checkbox" data-layer="3">
-            Câblage
-        </label>
-        <label class="checkbox">
-            <input type="checkbox" class="layer-checkbox" data-layer="2">
-            Répartiteurs
-        </label>
-        <label class="checkbox">
-            <input type="checkbox" class="layer-checkbox" data-layer="1">
-            Échelle
-        </label>
+        <h3>Légende</h3>
+        <div class="well">
+            <label class="checkbox">
+                <input type="checkbox" class="layer-checkbox" data-layer="3">
+                Câblage
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="layer-checkbox" data-layer="2">
+                Répartiteurs
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="layer-checkbox" data-layer="1">
+                Échelle
+            </label>
+        </div>
     </div>
 </div>
 {% endblock %}
