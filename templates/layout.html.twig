@@ -10,6 +10,7 @@
         <link href="/css/layout.css" rel="stylesheet" type="text/css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="/js/bootstrap.js"></script>
+        <script src="/js/map.js"></script>
         <!--[if lt IE 9]>
           <script src="../assets/js/html5shiv.js"></script>
         <![endif]-->
@@ -22,8 +23,8 @@
                     <div class="navbar-inner">
                         <div class="container">
                             <ul class="nav">
-                                <li class="active"><a href="#">Accueil</a></li>
-                                <li><a href="#">Plans</a></li>
+                                <li class="active"><a href="{{ path('homepage') }}">Accueil</a></li>
+                                <li><a href="{{ path('map')}}">Plan</a></li>
                             </ul>
                         </div>
                     </div>

@@ -8,6 +8,8 @@ body {
   max-width: 1000px;
 }
 
+/* Navigation bar */
+
 .navbar .navbar-inner {
   padding: 0;
 }
@@ -43,4 +45,18 @@ body {
 
 footer {
   text-align: center;
+}
+
+/* Map */
+
+.map-container {
+  width: 700px;
+  height: 700px;
+  position: relative;
+}
+
+.map-container > img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
