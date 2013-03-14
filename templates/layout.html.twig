@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title 'Accueil' %} - TCS Etude de case</title>
+        <link href="{{ app.request.basepath }}/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <script src="{{ app.request.basepath }}/js/bootstrap.js"></script>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>
