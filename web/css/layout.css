@@ -1,3 +1,32 @@
+/* Google fonts */
+@font-face {
+  font-family: "Asap";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Asap-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Asap";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/Asap-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Asap";
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/Asap-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Asap";
+  font-style: italic;
+  font-weight: 700;
+  src: url(../fonts/Asap-BoldItalic.ttf);
+}
+
 body {
   padding-top: 20px;
   padding-bottom: 60px;
@@ -6,6 +35,21 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1000px;
+}
+
+.logo {
+  font-family: "Asap";
+  margin-bottom: 11px;
+}
+
+.logo img {
+  float: left;
+  margin-right: 6px;
+}
+
+.logo h3 {
+  margin-top: 19px;
+  color: #3b3b3b;
 }
 
 /* Navigation bar */
