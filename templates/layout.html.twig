@@ -16,6 +16,7 @@
         <![endif]-->
     </head>
     <body>
+        {% set menu = menu|default('homepage') %}
         <div class="container">
             <div class="masthead">
                 <div class="logo clearfix">
@@ -26,9 +27,8 @@
                     <div class="navbar-inner">
                         <div class="container">
                             <ul class="nav">
-                                <li class="active"><a href="{{ path('homepage') }}">Accueil</a></li>
-                                <li><a href="{{ path('homepage')}}">Présentation</a></li>
-                                <li><a href="{{ path('map')}}">Plan</a></li>
+                                <li{% if menu == 'homepage' %} class="active"{% endif %}><a href="{{ path('homepage') }}">Présentation</a></li>
+                                <li{% if menu == 'map' %} class="active"{% endif %}><a href="{{ path('map')}}">Plans</a></li>
                                 <li><a href="{{ path('homepage')}}">Informations</a></li>
                                 <li><a href="{{ path('homepage')}}">A propos</a></li>
                             </ul>
