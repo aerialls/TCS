@@ -3,37 +3,52 @@
 {% set menu = 'map' %}
 
 {% block content %}
-<div class="alert alert-info">
-    Voici le plan des <strong>Quatre Vents</strong>. Vous avez la possibilité d'afficher ou de masquer
-    un certain nombre d'éléments via la légende à droite dynamiquement.
-</div>
+<ul class="nav nav-tabs" id="tab-maps">
+    <li class="active"><a href="#site">Câblage du site</a></li>
+    <li><a href="#salle">Câblage d'une salle</a></li>
+</ul>
 
-<div class="row">
-    <div class="span9">
-        <h3>Plan des Quatre Vents</h3>
-        <div class="map-container">
-            <img id="layer-1" class="layer" src="/images/map/1.png" />
-            <img id="layer-2" class="layer" src="/images/map/2.png" />
-            <img src="/images/map/map.png" />
-            <img id="layer-3" class="layer" src="/images/map/3.png" />
+<div class="tab-content">
+    <div class="tab-pane active" id="site">
+        <!-- Cablage du site -->
+        <div class="alert alert-info">
+            Voici le plan des <strong>Quatre Vents</strong>. Vous avez la possibilité d'afficher ou de masquer
+            un certain nombre d'éléments via la légende à droite dynamiquement.
+        </div>
+
+        <div class="row">
+            <div class="span9">
+                <h3>Plan des Quatre Vents</h3>
+                <div class="map-container">
+                    <img id="layer-1" class="layer" src="/images/map/1.png" />
+                    <img id="layer-2" class="layer" src="/images/map/2.png" />
+                    <img src="/images/map/map.png" />
+                    <img id="layer-3" class="layer" src="/images/map/3.png" />
+                </div>
+            </div>
+            <div class="span3">
+                <h3>Légende</h3>
+                <div class="well">
+                    <label class="checkbox">
+                        <input type="checkbox" class="layer-checkbox" data-layer="3">
+                        Câblage
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="layer-checkbox" data-layer="2">
+                        Répartiteurs
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="layer-checkbox" data-layer="1">
+                        Échelle
+                    </label>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="span3">
-        <h3>Légende</h3>
-        <div class="well">
-            <label class="checkbox">
-                <input type="checkbox" class="layer-checkbox" data-layer="3">
-                Câblage
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" class="layer-checkbox" data-layer="2">
-                Répartiteurs
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" class="layer-checkbox" data-layer="1">
-                Échelle
-            </label>
-        </div>
+    <div class="tab-pane" id="salle">
+        <!-- Cablage d'une salle -->
+        <img id="piece-schema" src="/images/piece.png">
+        <p>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.</p>
     </div>
 </div>
 {% endblock %}
