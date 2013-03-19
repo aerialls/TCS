@@ -2,16 +2,32 @@
 
 use Symfony\Component\HttpFoundation\Response;
 
+// Presentation
 $app->get('/', function () use ($app) {
-    return $app['twig']->render('index.html.twig');
+    return $app['twig']->render('presentation.html.twig');
 })
-->bind('homepage')
+->bind('presentation')
 ;
 
-$app->get('/map', function() use ($app) {
-    return $app['twig']->render('map.html.twig');
+// Maps
+$app->get('/maps', function() use ($app) {
+    return $app['twig']->render('maps.html.twig');
 })
-->bind('map')
+->bind('maps')
+;
+
+// Prices
+$app->get('/prices', function() use ($app) {
+    return $app['twig']->render('prices.html.twig');
+})
+->bind('prices')
+;
+
+// Solutions
+$app->get('/solutions', function() use ($app) {
+    return $app['twig']->render('solutions.html.twig');
+})
+->bind('solutions')
 ;
 
 $app->error(function (\Exception $e, $code) use ($app) {
