@@ -37,6 +37,12 @@ body {
   max-width: 1000px;
 }
 
+p {
+  text-align: justify;
+}
+
+/* Header */
+
 .logo {
   font-family: "Asap";
   margin-bottom: 11px;
@@ -87,7 +93,7 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
-footer {
+footer p {
   text-align: center;
 }
 
