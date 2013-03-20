@@ -103,6 +103,12 @@ footer p {
 
 /* Map */
 
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  background-color: #fcfcfc;
+}
+
 .map-container {
   width: 700px;
   height: 700px;
