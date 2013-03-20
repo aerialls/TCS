@@ -22,5 +22,7 @@ $(document).ready(function() {
    });
 
    // Tooltips
-   $('.tec-local').tooltip();
+   $('.tec-local').tooltip({
+       container: 'body'
+   });
 });
