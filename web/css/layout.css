@@ -124,3 +124,40 @@ footer p {
 #piece-schema {
   margin-bottom: 10px;
 }
+
+.tec-local {
+  position: absolute;
+}
+
+.tooltip {
+  font-size: 14px;
+  font-family: "Asap";
+}
+
+.red-local {
+  width: 25px;
+  height: 25px;
+  top: 232px;
+  left: 372px;
+}
+
+.green-local {
+  width: 32px;
+  height: 26px;
+  top: 292px;
+  left: 76px;
+}
+
+.yellow-local {
+  width: 35px;
+  height: 50px;
+  top: 279px;
+  left: 480px;
+}
+
+.blue-local {
+  width: 32px;
+  height: 86px;
+  top: 579px;
+  left: 430px;
+}

@@ -20,4 +20,7 @@ $(document).ready(function() {
           $('#layer-' + id).hide();
       }
    });
+
+   // Tooltips
+   $('.tec-local').tooltip();
 });
