@@ -17,7 +17,6 @@ $app->register(new TwigServiceProvider(), array(
 
 $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
     // add custom globals, filters, tags, ...
-
     return $twig;
 }));
 

@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% set menu = 'installations' %}
+
+{% block content %}
+<div class="navbar">
+    <div class="navbar-inner">
+        <ul class="nav">
+            <li><a href="{{ path('carte') }}">Câblage du site "Les Quatres Vents"</a></li>
+            <li><a href="{{ path('salle') }}">Câblage d'une salle de cours</a></li>
+        </ul>
+    </div>
+</div>
+
+{% block subcontent '' %}
+{% endblock %}

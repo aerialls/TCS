@@ -23,14 +23,14 @@
                     <img src="/images/logo.png">
                     <h3 class="muted">BlackSwitch</h3>
                 </div>
-                <div class="navbar">
+                <div class="navbar navbar-principal">
                     <div class="navbar-inner">
                         <div class="container">
                             <ul class="nav">
                                 <li{% if menu == 'presentation' %} class="active"{% endif %}><a href="{{ path('presentation') }}">Présentation</a></li>
                                 <li{% if menu == 'solutions' %} class="active"{% endif %}><a href="{{ path('solutions')}}">Solutions</a></li>
-                                <li{% if menu == 'maps' %} class="active"{% endif %}><a href="{{ path('maps')}}">Plans</a></li>
-                                <li{% if menu == 'prices' %} class="active"{% endif %}><a href="{{ path('prices')}}">Prix</a></li>
+                                <li{% if menu == 'installations' %} class="active"{% endif %}><a href="{{ path('carte')}}">Installations</a></li>
+                                <li{% if menu == 'prix' %} class="active"{% endif %}><a href="{{ path('prix')}}">Prix</a></li>
                             </ul>
                         </div>
                     </div>

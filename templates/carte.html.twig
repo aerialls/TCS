@@ -1,0 +1,45 @@
+{% extends 'installations.html.twig' %}
+
+{% block subcontent %}
+<div class="alert alert-info">
+    Voici le plan des <strong>Quatre Vents</strong>. Vous avez la possibilité d'afficher
+    un certain nombre d'éléments via la légende à droite dynamiquement.
+</div>
+
+<div class="row">
+    <div class="span9">
+        <h3>Câblage du site - Plan des Quatre Vents</h3>
+        <div class="map-container">
+            <img id="layer-1" class="layer" src="/images/map/1.png" />
+            <img id="layer-2" class="layer" src="/images/map/2.png" />
+            <img src="/images/map/map.png" />
+            <img id="layer-3" class="layer" src="/images/map/3.png" />
+            <a href="{{ path('repartiteur', {'id': 1}) }}" class="tec-local red-local" data-toggle="tooltip" title="Local technique secondaire #1" data-placement="bottom"></a>
+            <a href="{{ path('repartiteur', {'id': 2}) }}" class="tec-local green-local" data-toggle="tooltip" title="Local technique secondaire #2" data-placement="bottom"></a>
+            <a href="{{ path('repartiteur', {'id': 3}) }}" class="tec-local yellow-local" data-toggle="tooltip" title="Local technique secondaire #3" data-placement="bottom"></a>
+            <a href="{{ path('repartiteur', {'id': 4}) }}" class="tec-local blue-local" data-toggle="tooltip" title="Local technique principal" data-placement="top"></a>
+        </div>
+    </div>
+    <div class="span3">
+        <h3>Légende</h3>
+        <div class="well">
+            <label class="checkbox">
+                <input type="checkbox" class="layer-checkbox" data-layer="3">
+                Chemins de câbles
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="layer-checkbox" data-layer="2">
+                Locaux techniques
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="layer-checkbox" data-layer="1">
+                Échelle métrique
+            </label>
+        </div>
+        <div class="alert alert-success">
+            <strong>Info</strong>
+            Vous pouvez cliquer sur l'un des répartiteurs pour avoir plus d'informations.
+        </div>
+    </div>
+</div>
+{% endblock %}

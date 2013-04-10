@@ -64,35 +64,35 @@ p {
 
 /* Navigation bar */
 
-.navbar .navbar-inner {
+.navbar-principal .navbar-inner {
   padding: 0;
 }
 
-.navbar .nav {
+.navbar-principal .nav {
   margin: 0;
   display: table;
   width: 100%;
 }
 
-.navbar .nav li {
+.navbar-principal .nav li {
   display: table-cell;
   width: 1%;
   float: none;
 }
 
-.navbar .nav li a {
+.navbar-principal .nav li a {
   font-weight: bold;
   text-align: center;
   border-left: 1px solid rgba(255,255,255,.75);
   border-right: 1px solid rgba(0,0,0,.1);
 }
 
-.navbar .nav li:first-child a {
+.navbar-principal .nav li:first-child a {
   border-left: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.navbar .nav li:last-child a {
+.navbar-principal .nav li:last-child a {
   border-right: 0;
   border-radius: 0 3px 3px 0;
 }
