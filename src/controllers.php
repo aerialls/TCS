@@ -24,10 +24,17 @@ $app->get('/salle', function() use ($app) {
 ;
 
 // Prix
-$app->get('/prix', function() use ($app) {
+$app->get('/prix/total', function() use ($app) {
     return $app['twig']->render('prix.html.twig');
 })
 ->bind('prix')
+;
+
+// Prix installations physique
+$app->get('/prix/cablage', function() use ($app) {
+    return $app['twig']->render('prix-cablage.html.twig');
+})
+->bind('prix_cablage')
 ;
 
 // Solutions
