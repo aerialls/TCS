@@ -161,3 +161,7 @@ footer p {
   top: 579px;
   left: 430px;
 }
+
+.section-title {
+  font-weight: bold;
+}
