@@ -44,6 +44,24 @@ $app->get('/solutions', function() use ($app) {
 ->bind('solutions')
 ;
 
+$app->get('/solutions/low-cost', function() use ($app) {
+    return $app['twig']->render('solution-lowcost.html.twig');
+})
+->bind('solution_low')
+;
+
+$app->get('/solutions/qualite-prix', function() use ($app) {
+    return $app['twig']->render('solution-middle.html.twig');
+})
+->bind('solution_middle')
+;
+
+$app->get('/solutions/premium', function() use ($app) {
+    return $app['twig']->render('solution-premium.html.twig');
+})
+->bind('solution_premium')
+;
+
 $app->get('/repartiteur/{id}', function($id) use ($app) {
     return $app['twig']->render('repartiteur-'.$id.'.html.twig');
 })
