@@ -167,7 +167,7 @@ footer p {
 }
 
 .table-separator {
-  background-color: #555;
+  background-color: #f0f0f0 !important;
   height: 5px;
   padding: 0px !important;
 }
