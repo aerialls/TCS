@@ -198,3 +198,8 @@ div.clickable a {
   opacity: 0;
   filter: alpha(opacity=1);
 }
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+}
