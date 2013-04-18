@@ -225,3 +225,8 @@ div.clickable a {
 .rack h4 {
   margin: 0 0 10px 0;
 }
+
+.btn-center {
+  text-align: center;
+  margin-top: 16px;
+}
