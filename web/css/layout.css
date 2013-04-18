@@ -208,3 +208,20 @@ div.clickable a {
   font-weight: bold;
   font-size: 16px;
 }
+
+.rack .badge {
+  top: -2px;
+  position: relative;
+}
+
+.rack .well {
+  padding: 9px;
+}
+
+.rack .well p {
+  margin: 0px;
+}
+
+.rack h4 {
+  margin: 0 0 10px 0;
+}

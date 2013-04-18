@@ -1,5 +1,37 @@
 {% extends 'installations.html.twig' %}
 
 {% block subcontent %}
-    <h3>Local technique secondaire #1</h3>
+<h3>Local technique secondaire #1</h3>
+
+<div class="clear-fix"></div>
+<div class="row">
+    <div class="span4">
+        <img src="/images/rack-1.png">
+    </div>
+    <div class="span8 rack">
+        <h4>Switch Cisco Catalyst 48 stackable (2960S-48TS-L) <span class="badge badge-warning">1U</span> <span class="badge badge-info">7 équipements</span></h4>
+        <div class="well">
+            <p>Ports : 48 x 10/100/1000BaseT</p>
+            <p>Autres ports : 4 x SFP</p>
+            <p>Empilable : oui</p>
+            <p>Administrable : oui</p>
+            <p>Format : rack</p>
+            <p>Bloc secteur : interne</p>
+            <p>PoE : non</p>
+            <p>Sans ventilateur : non</p>
+        </div>
+
+        <h4>Platine de brassage CAT6a FTP 24 ports (JPM10GF24) <span class="badge badge-warning">1U</span> <span class="badge badge-info">14 équipements</span></h4>
+        <div class="well">
+            <p>Platine nue prévue pour prises CAT6a ou CAT7. Contacts de masse automatiques. Plateau guide-câble arrière intégré. Numéros de port clairement visibles.</p>
+        </div>
+
+        <h4>Tiroir de brassage fibre coulissant 24 ports <span class="badge badge-warning">1U</span> <span class="badge badge-info">1 équipement</span></h4>
+        <div class="well">
+            Versions multimode. Inclut 24 coupleurs. Connexions LC duplex. Aménagement pour guider les câbles.
+        </div>
+
+        <a href="{{ path('prix_cablage') }}#repartiteur-1" class="btn btn-inverse">Afficher le chiffrage de ce répartiteur</a>
+    </div>
+</div>
 {% endblock %}
