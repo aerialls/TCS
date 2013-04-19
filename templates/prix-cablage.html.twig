@@ -22,54 +22,54 @@
             <td>Câble CAT6a F/UTP 650 MHz <span class="label label-important">couleur rouge</span></td>
             <td>1,046 &euro; / m</td>
             <td>9 865 m</td>
-            <td>10 325 &euro;</td>
+            <td>{{ calc_add('c', 10325) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1236/12773/Cable-CAT6a-F-UTP-650-MHz-en-bobine/ #}
         <tr>
             <td>Câble CAT6a F/UTP 650 MHz <span class="label label-success">couleur vert</span></td>
             <td>1,046 &euro; / m</td>
             <td>8 842 m</td>
-            <td>9 254 &euro;</td>
+            <td>{{ calc_add('c', 9254) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1236/12773/Cable-CAT6a-F-UTP-650-MHz-en-bobine/ #}
         <tr>
             <td>Câble CAT6a F/UTP 650 MHz <span class="label label-warning">couleur jaune</span></td>
             <td>1,046 &euro; / m</td>
             <td>7 788 m</td>
-            <td>8 151 &euro;</td>
+            <td>{{ calc_add('c', 8151) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1236/12773/Cable-CAT6a-F-UTP-650-MHz-en-bobine/ #}
         <tr>
             <td>Câble CAT6a F/UTP 650 MHz <span class="label label-info">couleur bleu</span></td>
             <td>1,046 &euro; / m</td>
             <td>4 512 m</td>
-            <td>4 723 &euro;</td>
+            <td>{{ calc_add('c', 4723) }}</td>
         </tr>
         <tr>
             <td><a href="{{ path('salle') }}#prix">Câblage d'une salle standard</a></td>
             <td>8 119,25 &euro;</td>
             <td>42</td>
-            <td>341 009 &euro;</td>
+            <td>{{ calc_add('c', 341009) }}</td>
         </tr>
         {# http://www.blackbox.fr/fr-fr/fi/1256/11391/Cable-fibre-50-m-OM3-sous-tube/ #}
         <tr>
             <td>Câble fibre 50 &#181;m OM3 sous tube</td>
             <td>1,23 &euro; / m</td>
             <td>218 m</td>
-            <td>268,14 &euro;</td>
+            <td>{{ calc_add('c', 268.14) }}</td>
         </tr>
         <tr>
             <td>Chemins de câbles à bords roulés - Série BS (72x268)</td>
             <td>32,25 &euro; / m</td>
             <td>576 m</td>
-            <td>18 576 &euro;</td>
+            <td>{{ calc_add('c', 18576) }}</td>
         </tr>
 
         <tr class="success">
             <td><strong>Sous-total</strong</td>
             <td></td>
             <td></td>
-            <td><span class="subprice">392 306 &euro;</span></td>
+            <td><span class="subprice">{{ calc_get('c') }}</span></td>
         </tr>
 
         <tr id="repartiteur-1" class="warning">
@@ -80,35 +80,35 @@
             <td>Tiroir de brassage fibre coulissant 24 ports</td>
             <td>129 &euro;</td>
             <td>1</td>
-            <td>129 &euro;</td>
+            <td>{{ calc_add('r1', 129) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1263/11271/Jarretiere-fibre-10G-OM3(LSZH)LC-LC/ #}
         <tr>
             <td>Jarretière fibre 10G OM3 3m (LSZH) LC-LC</td>
             <td>28 &euro;</td>
             <td>1</td>
-            <td>28 &euro;</td>
+            <td>{{ calc_add('r1', 28) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1246/12263/Platine-de-brassage-CAT6a-FTP/ #}
         <tr>
             <td>Platine de brassage CAT6a FTP 24 ports (JPM10GF24)</td>
             <td>85 &euro;</td>
             <td>14</td>
-            <td>1 190 &euro;</td>
+            <td>{{ calc_add('r1', 1190) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1241/12374/Cordon-de-brassage-PCI-6/ #}
         <tr>
             <td>Cordon de brassage PCI-6 U/FTP 2,1m</td>
             <td>11 &euro;</td>
             <td>300</td>
-            <td>3 300 &euro;</td>
+            <td>{{ calc_add('r1', 3300) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1365/12590/Armoire-Elite-42U,L600xP1000/ #}
         <tr>
             <td>Armoire Elite 42U, L600xP1000</td>
             <td>1 105 &euro;</td>
             <td>2</td>
-            <td>2 210 &euro;</td>
+            <td>{{ calc_add('r1', 2210) }}</td>
         </tr>
 
         <tr><td class="table-separator" colspan="4"></td></tr>
@@ -118,28 +118,28 @@
             <td>Switch Cisco Catalyst 48 ports stackable (2960S-48TS-L)</td>
             <td>2 011 &euro;</td>
             <td>7</td>
-            <td>14 077 &euro;</td>
+            <td>{{ calc_add('r1', 14077) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/Module+FlexStack+CISCO+Catalyst+2960S_616598-05?pixelSource=&currencyIsoCode=EUR #}
         <tr>
             <td>Module FlexStack CISCO Catalyst 2960S</td>
             <td>572 &euro;</td>
             <td>6</td>
-            <td>3 432 &euro;</td>
+            <td>{{ calc_add('r1', 3432) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/CISCO+SFP+GLC-SX-MMD%3D_712589-05?pixelSource=&currencyIsoCode=EUR #}
         <tr>
             <td>Convertisseur Gigabit Mini-GBIC SFP GLC-SX-MMD=</td>
             <td>269 &euro;</td>
             <td>1</td>
-            <td>269 &euro;</td>
+            <td>{{ calc_add('r1', 269) }}</td>
         </tr>
 
         <tr class="success">
             <td><strong>Sous-total</strong</td>
             <td></td>
             <td></td>
-            <td><span class="subprice">24 635 &euro;</span></td>
+            <td><span class="subprice">{{ calc_get('r1') }}</span></td>
         </tr>
 
         <tr id="repartiteur-2" class="warning">
@@ -150,35 +150,35 @@
             <td>Tiroir de brassage fibre coulissant 24 ports</td>
             <td>129 &euro;</td>
             <td>1</td>
-            <td>129 &euro;</td>
+            <td>{{ calc_add('r2', 129) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1263/11271/Jarretiere-fibre-10G-OM3(LSZH)LC-LC/ #}
         <tr>
             <td>Jarretière fibre 10G OM3 3m (LSZH) LC-LC</td>
             <td>28 &euro;</td>
             <td>1</td>
-            <td>28 &euro;</td>
+            <td>{{ calc_add('r2', 28) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1246/12263/Platine-de-brassage-CAT6a-FTP/ #}
         <tr>
             <td>Platine de brassage CAT6a FTP 24 ports (JPM10GF24)</td>
             <td>85 &euro;</td>
             <td>14</td>
-            <td>1 190 &euro;</td>
+            <td>{{ calc_add('r2', 1190) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1241/12374/Cordon-de-brassage-PCI-6/ #}
         <tr>
             <td>Cordon de brassage PCI-6 U/FTP 2,1m</td>
             <td>11 &euro;</td>
             <td>300</td>
-            <td>3 300 &euro;</td>
+            <td>{{ calc_add('r2', 3300) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1365/12590/Armoire-Elite-42U,L600xP1000/ #}
         <tr>
             <td>Armoire Elite 42U, L600xP1000</td>
             <td>1 105 &euro;</td>
             <td>2</td>
-            <td>2 210 &euro;</td>
+            <td>{{ calc_add('r2', 2210) }}</td>
         </tr>
 
         <tr><td class="table-separator" colspan="4"></td></tr>
@@ -188,28 +188,28 @@
             <td>Switch Cisco Catalyst 48 ports stackable (2960S-48TS-L)</td>
             <td>2 011 &euro;</td>
             <td>7</td>
-            <td>14 077 &euro;</td>
+            <td>{{ calc_add('r2', 14077) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/Module+FlexStack+CISCO+Catalyst+2960S_616598-05?pixelSource=&currencyIsoCode=EUR #}
         <tr>
             <td>Module FlexStack CISCO Catalyst 2960S</td>
             <td>572 &euro;</td>
             <td>6</td>
-            <td>3 432 &euro;</td>
+            <td>{{ calc_add('r2', 3432) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/CISCO+SFP+GLC-SX-MMD%3D_712589-05?pixelSource=&currencyIsoCode=EUR #}
         <tr>
             <td>Convertisseur Gigabit Mini-GBIC SFP GLC-SX-MMD=</td>
             <td>269 &euro;</td>
             <td>1</td>
-            <td>269 &euro;</td>
+            <td>{{ calc_add('r2', 269) }}</td>
         </tr>
 
         <tr class="success">
             <td><strong>Sous-total</strong</td>
             <td></td>
             <td></td>
-            <td><span class="subprice">24 635 &euro;</span></td>
+            <td><span class="subprice">{{ calc_get('r2') }}</span></td>
         </tr>
 
         <tr id="repartiteur-3" class="warning">
@@ -220,35 +220,35 @@
             <td>Tiroir de brassage fibre coulissant 24 ports</td>
             <td>129 &euro;</td>
             <td>1</td>
-            <td>129 &euro;</td>
+            <td>{{ calc_add('r3', 129) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1263/11271/Jarretiere-fibre-10G-OM3(LSZH)LC-LC/ #}
         <tr>
             <td>Jarretière fibre 10G OM3 3m (LSZH) LC-LC</td>
             <td>28 &euro;</td>
             <td>1</td>
-            <td>28 &euro;</td>
+            <td>{{ calc_add('r3', 28) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1246/12263/Platine-de-brassage-CAT6a-FTP/ #}
         <tr>
             <td>Platine de brassage CAT6a FTP 24 ports (JPM10GF24)</td>
             <td>85 &euro;</td>
             <td>16</td>
-            <td>1 360 &euro;</td>
+            <td>{{ calc_add('r3', 1360) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1241/12374/Cordon-de-brassage-PCI-6/ #}
         <tr>
             <td>Cordon de brassage PCI-6 U/FTP 2,1m</td>
             <td>11 &euro;</td>
             <td>350</td>
-            <td>3 850 &euro;</td>
+            <td>{{ calc_add('r3', 3850) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1365/12590/Armoire-Elite-42U,L600xP1000/ #}
         <tr>
             <td>Armoire Elite 42U, L600xP1000</td>
             <td>1 105 &euro;</td>
             <td>2</td>
-            <td>2 210 &euro;</td>
+            <td>{{ calc_add('r3', 2210) }}</td>
         </tr>
 
         <tr><td class="table-separator" colspan="4"></td></tr>
@@ -258,28 +258,28 @@
             <td>Switch Cisco Catalyst 48 ports stackable (2960S-48TS-L)</td>
             <td>2 011 &euro;</td>
             <td>8</td>
-            <td>16 088 &euro;</td>
+            <td>{{ calc_add('r3', 16088) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/Module+FlexStack+CISCO+Catalyst+2960S_616598-05?pixelSource=&currencyIsoCode=EUR #}
         <tr>
             <td>Module FlexStack CISCO Catalyst 2960S</td>
             <td>572 &euro;</td>
             <td>7</td>
-            <td>4 004 &euro;</td>
+            <td>{{ calc_add('r3', 4004) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/CISCO+SFP+GLC-SX-MMD%3D_712589-05?pixelSource=&currencyIsoCode=EUR #}
         <tr>
             <td>Convertisseur Gigabit Mini-GBIC SFP GLC-SX-MMD=</td>
             <td>269 &euro;</td>
             <td>1</td>
-            <td>269 &euro;</td>
+            <td>{{ calc_add('r3', 269) }}</td>
         </tr>
 
         <tr class="success">
             <td><strong>Sous-total</strong</td>
             <td></td>
             <td></td>
-            <td><span class="subprice">27 938 &euro;</span></td>
+            <td><span class="subprice">{{ calc_get('r3') }}</span></td>
         </tr>
 
         <tr id="repartiteur-4" class="warning">
@@ -290,35 +290,35 @@
             <td>Tiroir de brassage fibre coulissant 24 ports</td>
             <td>129 &euro;</td>
             <td>1</td>
-            <td>129 &euro;</td>
+            <td>{{ calc_add('r4', 129) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1263/11271/Jarretiere-fibre-10G-OM3(LSZH)LC-LC/ #}
         <tr>
             <td>Jarretière fibre 10G OM3 3m (LSZH) LC-LC</td>
             <td>28 &euro;</td>
             <td>5</td>
-            <td>140 &euro;</td>
+            <td>{{ calc_add('r4', 140) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1246/12263/Platine-de-brassage-CAT6a-FTP/ #}
         <tr>
             <td>Platine de brassage CAT6a FTP 24 ports (JPM10GF24)</td>
             <td>85 &euro;</td>
             <td>9</td>
-            <td>765 &euro;</td>
+            <td>{{ calc_add('r4', 765) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1241/12374/Cordon-de-brassage-PCI-6/ #}
         <tr>
             <td>Cordon de brassage PCI-6 U/FTP 2,1m</td>
             <td>11 &euro;</td>
             <td>160</td>
-            <td>1 760 &euro;</td>
+            <td>{{ calc_add('r4', 1760) }}</td>
         </tr>
         {# https://www.blackbox.fr/fr-fr/fi/1365/12590/Armoire-Elite-42U,L600xP1000/ #}
         <tr>
             <td>Armoire Elite 42U, L600xP1000</td>
             <td>1 105 &euro;</td>
             <td>2</td>
-            <td>2 210 &euro;</td>
+            <td>{{ calc_add('r4', 2210) }}</td>
         </tr>
 
         <tr><td class="table-separator" colspan="4"></td></tr>
@@ -328,7 +328,7 @@
             <td>Onduleur AEG PROTECT B.PRO 1000 USV</td>
             <td>337 &euro;</td>
             <td>1</td>
-            <td>337 &euro;</td>
+            <td>{{ calc_add('r4', 337) }}</td>
         </tr>
 
         {# http://www.bechtle.fr/shop/BD_FR/product/detail?wt_lp=landingpage.a&SSID=BD_FR&link=616039&LANG=fr #}
@@ -336,52 +336,52 @@
             <td>Switch Cisco Catalyst 48 ports stackable (2960S-48TS-L)</td>
             <td>2 011 &euro;</td>
             <td>4</td>
-            <td>8 044 &euro;</td>
+            <td>{{ calc_add('r4', 8044) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/Switch+CISCO+Catalyst+2960S-24PS-L_616067?pixelSource= #}
         <tr>
             <td>Switch Cisco Catalyst PoE 24 ports stackable (2960S-24PS-L)</td>
             <td>1 503 &euro;</td>
             <td>1</td>
-            <td>1 503 &euro;</td>
+            <td>{{ calc_add('r4', 1503) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/Swiitch+Cisco+Catalyst+3750G-12S-S_150554?pixelSource= #}
         <tr>
             <td>Switch Cisco Catalyst 12 ports SFP (3750G-12S-S)</td>
             <td>4 045 &euro;</td>
             <td>1</td>
-            <td>4 045 &euro;</td>
+            <td>{{ calc_add('r4', 4045) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/Module+FlexStack+CISCO+Catalyst+2960S_616598-05?pixelSource=&currencyIsoCode=EUR #}
         <tr>
             <td>Module FlexStack CISCO Catalyst 2960S</td>
             <td>572 &euro;</td>
             <td>5</td>
-            <td>2 860 &euro;</td>
+            <td>{{ calc_add('r4', 2860) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/CISCO+SFP+GLC-SX-MMD%3D_712589-05?pixelSource=&currencyIsoCode=EUR #}
         <tr>
             <td>Convertisseur Gigabit Mini-GBIC SFP GLC-SX-MMD=</td>
             <td>269 &euro;</td>
             <td>5</td>
-            <td>1345 &euro;</td>
+            <td>{{ calc_add('r4', 1345) }}</td>
         </tr>
         {# http://www.ldlc-pro.com/fiche/PB00141125.html #}
         <tr>
             <td>Gigabit Ethernet 1000 Base-T Mini-GBIC RJ45 SFP Transceiver</td>
             <td>102 &euro;</td>
             <td>1</td>
-            <td>102 &euro;</td>
+            <td>{{ calc_add('r4', 102) }}</td>
         </tr>
 
         <tr class="success">
             <td><strong>Sous-total</strong</td>
             <td></td>
             <td></td>
-            <td><span class="subprice">&euro;</span></td>
+            <td><span class="subprice">{{ calc_get('r4') }}</span></td>
         </tr>
 
-        <tr id="repartiteur-4" class="warning">
+        <tr class="warning">
             <td colspan="4"><div class="section-title">Administration</div></td>
         </tr>
 
@@ -390,41 +390,41 @@
             <td>PC Dell Vostro 270 MT</td>
             <td>379 &euro;</td>
             <td>10</td>
-            <td>3 790 &euro;</td>
+            <td>{{ calc_add('a', 3790) }}</td>
         </tr>
         {# http://accessories.euro.dell.com/sna/products/Ecrans/productdetail.aspx?c=fr&l=fr&s=bsd&cs=frbsdt1&sku=620577 #}
         <tr>
             <td>Ecran large Dell IN2030M de 51cm (20" - 1600x900) </td>
             <td>107,86 &euro;</td>
             <td>10</td>
-            <td>1 078,6 &euro;</td>
+            <td>{{ calc_add('a', 1078.6) }}</td>
         </tr>
         {# http://www.bechtle.fr/shop/BD_FR/T%C3%A9l.+IP+Cisco+SB+SPA502G+1+ligne+PoE_590103?pixelSource= #}
         <tr>
             <td>Téléphone IP Cisco SB SPA502G 1 ligne PoE</td>
             <td>81,5 &euro;</td>
             <td>10</td>
-            <td>815 &euro;</td>
+            <td>{{ calc_add('a', 815) }}</td>
         </tr>
         <tr>
             <td>xerox Phaser 5550DN A3</td>
             <td>2 595 &euro;</td>
             <td>1</td>
-            <td>2 595 &euro;</td>
+            <td>{{ calc_add('a', 2595) }}</td>
         </tr>
 
         <tr class="success">
             <td><strong>Sous-total</strong</td>
             <td></td>
             <td></td>
-            <td><span class="subprice">8 279 &euro;</span></td>
+            <td><span class="subprice">{{ calc_get('a') }}</span></td>
         </tr>
 
         <tr class="warning">
             <td><strong>Total</strong></td>
             <td></td>
             <td></td>
-            <td><span class="price">&euro;</span></td>
+            <td><span class="price">{{ calc_sum(['c','r1','r2','r3','r4','a']) }}</span></td>
         </tr>
     </tbody>
 </table>
