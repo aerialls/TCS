@@ -25,4 +25,6 @@ $(document).ready(function() {
    $('.tec-local').tooltip({
        container: 'body'
    });
+
+   $('.fancybox').fancybox();
 });
