@@ -23,11 +23,11 @@ $app->get('/salle', function() use ($app) {
 ->bind('salle')
 ;
 
-// Prix
-$app->get('/prix/total', function() use ($app) {
-    return $app['twig']->render('prix.html.twig');
+// Contact
+$app->get('/contact', function() use ($app) {
+    return $app['twig']->render('contact.html.twig');
 })
-->bind('prix')
+->bind('contact')
 ;
 
 // Prix installations physique
