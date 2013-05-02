@@ -230,3 +230,27 @@ div.clickable a {
   text-align: center;
   margin-top: 16px;
 }
+
+#presentation {
+  margin: auto;
+  width: 600px;
+}
+
+#presentation img {
+  float: left;
+  margin-right: 13px;
+  margin-bottom: 9px;
+}
+
+#blackswitch {
+  padding-top: 59px;
+  font-family: "Asap";
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#title {
+  font-family: "Asap";
+  font-size: 18px;
+  margin-top: 11px;
+}

@@ -47,9 +47,9 @@
         </tr>
         <tr>
             <td><a href="{{ path('salle') }}#prix">Câblage d'une salle standard</a></td>
-            <td>8 119,25 &euro;</td>
+            <td>758,75 &euro;</td>
             <td>42</td>
-            <td>{{ calc_add('c', 341009) }}</td>
+            <td>{{ calc_add('c', 31867.5) }}</td>
         </tr>
         {# http://www.blackbox.fr/fr-fr/fi/1256/11391/Cable-fibre-50-m-OM3-sous-tube/ #}
         <tr>
@@ -382,49 +382,89 @@
         </tr>
 
         <tr class="warning">
-            <td colspan="4"><div class="section-title">Administration</div></td>
+            <td colspan="4"><div class="section-title">Equipements pour les élèves et professeurs (317 personnes)</div></td>
         </tr>
 
-        {# http://www.dell.com/fr/entreprise/p/vostro-270/pd?oc=sbd2745&model_id=vostro-270 #}
+        {# https://www.igel.com/fr/produits/materiel-client-leger/serie-ud2.html #}
         <tr>
-            <td>PC Dell Vostro 270 MT</td>
-            <td>379 &euro;</td>
-            <td>10</td>
-            <td>{{ calc_add('a', 3790) }}</td>
+            <td>Client léger - IGEL UD2 Universal Desktop Thin Client</td>
+            <td>188 &euro;</td>
+            <td>317</td>
+            <td>{{ calc_add('ep', 118 * 317) }}</td>
         </tr>
-        {# http://accessories.euro.dell.com/sna/products/Ecrans/productdetail.aspx?c=fr&l=fr&s=bsd&cs=frbsdt1&sku=620577 #}
+        {# hhttp://www.rueducommerce.fr/Peripheriques-Reseaux-wifi/Ecran/Moniteur-PC/LG/4879664-Moniteur-LED-19-VGA-19EN33S.htm #}
         <tr>
-            <td>Ecran large Dell IN2030M de 51cm (20" - 1600x900) </td>
-            <td>107,86 &euro;</td>
-            <td>10</td>
-            <td>{{ calc_add('a', 1078.6) }}</td>
+            <td>LG  Moniteur LED 19" VGA - 19EN33S</td>
+            <td>89,99 &euro;</td>
+            <td>317</td>
+            <td>{{ calc_add('ep', 89.99 * 317) }}</td>
         </tr>
-        {# http://www.bechtle.fr/shop/BD_FR/T%C3%A9l.+IP+Cisco+SB+SPA502G+1+ligne+PoE_590103?pixelSource= #}
+        {# http://www.ldlc-pro.com/fiche/PB00117562.html #}
         <tr>
-            <td>Téléphone IP Cisco SB SPA502G 1 ligne PoE</td>
-            <td>81,5 &euro;</td>
-            <td>10</td>
-            <td>{{ calc_add('a', 815) }}</td>
+            <td>Clavier et souris - Microsoft Harware for Business Wired Desktop 400</td>
+            <td>11,62 &euro;</td>
+            <td>317</td>
+            <td>{{ calc_add('ep', 11.62 * 317) }}</td>
         </tr>
+        {# https://www.blackbox.fr/fr-fr/fi/1236/12773/Cable-CAT6a-F-UTP-650-MHz-en-bobine/ #}
         <tr>
-            <td>xerox Phaser 5550DN A3</td>
-            <td>2 595 &euro;</td>
-            <td>1</td>
-            <td>{{ calc_add('a', 2595) }}</td>
+            <td>Cordon CAT6 F/UTP LSZH - 2m</td>
+            <td>4,81 &euro;</td>
+            <td>317</td>
+            <td>{{ calc_add('ep', 4.81 * 317) }}</td>
         </tr>
 
         <tr class="success">
             <td><strong>Sous-total</strong</td>
             <td></td>
             <td></td>
-            <td><span class="subprice">{{ calc_get('a') }}</span></td>
+            <td><span class="subprice">{{ calc_get('ep') }}</span></td>
+        </tr>
+
+        <tr class="warning">
+            <td colspan="4"><div class="section-title">Equipements pour l'administration (8 personnes)</div></td>
+        </tr>
+
+        {# http://www.dell.com/fr/entreprise/p/vostro-270/pd?oc=sbd2745&model_id=vostro-270 #}
+        <tr>
+            <td>PC Dell Vostro 270 MT</td>
+            <td>379 &euro;</td>
+            <td>8</td>
+            <td>{{ calc_add('ea', 379 * 8) }}</td>
+        </tr>
+        {# http://accessories.euro.dell.com/sna/products/Ecrans/productdetail.aspx?c=fr&l=fr&s=bsd&cs=frbsdt1&sku=620577 #}
+        <tr>
+            <td>Ecran large Dell IN2030M de 51cm (20" - 1600x900) </td>
+            <td>107,86 &euro;</td>
+            <td>8</td>
+            <td>{{ calc_add('ea', 107.86 * 8) }}</td>
+        </tr>
+        {# http://www.bechtle.fr/shop/BD_FR/T%C3%A9l.+IP+Cisco+SB+SPA502G+1+ligne+PoE_590103?pixelSource= #}
+        <tr>
+            <td>Téléphone IP Cisco SB SPA502G 1 ligne PoE</td>
+            <td>81,5 &euro;</td>
+            <td>8</td>
+            <td>{{ calc_add('ea', 81.5 * 8) }}</td>
+        </tr>
+        <tr>
+            <td>xerox Phaser 5550DN A3</td>
+            <td>2 595 &euro;</td>
+            <td>1</td>
+            <td>{{ calc_add('ea', 2595) }}</td>
+        </tr>
+
+        <tr class="success">
+            <td><strong>Sous-total</strong</td>
+            <td></td>
+            <td></td>
+            <td><span class="subprice">{{ calc_get('ea') }}</span></td>
         </tr>
 
         <tr class="warning">
             <td><strong>Total</strong></td>
             <td></td>
             <td></td>
-            <td><span class="price">{{ calc_sum(['c','r1','r2','r3','r4','a']) }}</span></td>
+            <td><span class="price">{{ calc_sum(['c','r1','r2','r3','r4','ep', 'ea']) }}</span></td>
         </tr>
     </tbody>
 </table>

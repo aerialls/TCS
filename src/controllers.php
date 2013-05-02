@@ -2,11 +2,11 @@
 
 use Symfony\Component\HttpFoundation\Response;
 
-// Presentation
+// Société
 $app->get('/', function () use ($app) {
-    return $app['twig']->render('presentation.html.twig');
+    return $app['twig']->render('societe.html.twig');
 })
-->bind('presentation')
+->bind('societe')
 ;
 
 // Carte
