@@ -60,13 +60,15 @@ class Calculator
      *
      * @return integer The value
      */
-    public function sum($sections)
+    public function sum($section, $sections)
     {
         $total = 0;
         $sections = (array) $sections;
-        foreach ($sections as $section) {
-            $total += $this->get($section);
+        foreach ($sections as $sec) {
+            $total += $this->get($sec);
         }
+
+        $this->add($section, $total);
 
         return $total;
     }

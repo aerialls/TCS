@@ -29,6 +29,7 @@ class CalculatorExtension extends \Twig_Extension
         return array(
             'calc_add' => new \Twig_Function_Method($this, 'addCalculator', array('is_safe' => array('html'))),
             'calc_get' => new \Twig_Function_Method($this, 'getCalculator', array('is_safe' => array('html'))),
+            'calc_get_raw' => new \Twig_Function_Method($this, 'getRawCalculator', array('is_safe' => array('html'))),
             'calc_sum' => new \Twig_Function_Method($this, 'sumCalculator', array('is_safe' => array('html'))),
         );
     }
@@ -45,9 +46,14 @@ class CalculatorExtension extends \Twig_Extension
         return number_format($this->calculator->get($section), 2, ',', ' ').' &euro;';
     }
 
-    public function sumCalculator($sections)
+    public function getRawCalculator($section)
     {
-        return number_format($this->calculator->sum($sections), 2, ',', ' ').' &euro;';
+        return $this->calculator->get($section);
+    }
+
+    public function sumCalculator($section, $sections)
+    {
+        return number_format($this->calculator->sum($section, $sections), 2, ',', ' ').' &euro;';
     }
 
     public function getName()

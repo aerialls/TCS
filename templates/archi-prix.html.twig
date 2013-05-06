@@ -1,7 +1,7 @@
 {% extends 'architecture.html.twig' %}
 
 {% block subcontent %}
-<h3>Prix total du câblage physique pour une école</h3>
+<h3>Prix de l'architecture pour une école</h3>
 
 <table class="table table-striped">
     <thead>
@@ -46,7 +46,7 @@
             <td>{{ calc_add('c', 4723) }}</td>
         </tr>
         <tr>
-            <td><a href="{{ path('salle') }}#prix">Câblage d'une salle standard</a></td>
+            <td><a href="{{ path('archi_salle') }}#prix">Câblage d'une salle standard</a></td>
             <td>758,75 &euro;</td>
             <td>42</td>
             <td>{{ calc_add('c', 31867.5) }}</td>
@@ -464,8 +464,36 @@
             <td><strong>Total</strong></td>
             <td></td>
             <td></td>
-            <td><span class="price">{{ calc_sum(['c','r1','r2','r3','r4','ep', 'ea']) }}</span></td>
+            <td><span class="price">{{ calc_sum('subtotal', ['c','r1','r2','r3','r4','ep','ea']) }}</span></td>
         </tr>
     </tbody>
 </table>
+
+<h3>Prix de l'architecture total</h3>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th width="550px">Matériel</th>
+            <th>Prix unitaire</th>
+            <th>Unité</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Architecture d'une école</td>
+            <td>{{ calc_get('subtotal') }}</td>
+            <td>11</td>
+            <td>{{ calc_add('total', 11 * calc_get_raw('subtotal')) }}</td>
+        </tr>
+        <tr class="warning">
+            <td><strong>Total</strong></td>
+            <td></td>
+            <td></td>
+            <td><span class="price">{{ calc_get('total') }}</span></td>
+        </tr>
+    </tbody>
+</table>
+
 {% endblock %}

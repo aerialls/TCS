@@ -10,17 +10,17 @@ $app->get('/', function () use ($app) {
 ;
 
 // Carte
-$app->get('/carte', function() use ($app) {
-    return $app['twig']->render('carte.html.twig');
+$app->get('/architecture/carte', function() use ($app) {
+    return $app['twig']->render('archi-carte.html.twig');
 })
-->bind('carte')
+->bind('archi_carte')
 ;
 
 // Salle
-$app->get('/salle', function() use ($app) {
-    return $app['twig']->render('salle.html.twig');
+$app->get('/architecture/salle', function() use ($app) {
+    return $app['twig']->render('archi-salle.html.twig');
 })
-->bind('salle')
+->bind('archi_salle')
 ;
 
 // Contact
@@ -31,10 +31,10 @@ $app->get('/contact', function() use ($app) {
 ;
 
 // Prix installations physique
-$app->get('/prix/cablage', function() use ($app) {
-    return $app['twig']->render('prix-cablage.html.twig');
+$app->get('/architecture/prix', function() use ($app) {
+    return $app['twig']->render('archi-prix.html.twig');
 })
-->bind('prix_cablage')
+->bind('archi_prix')
 ;
 
 // Solutions
