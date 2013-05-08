@@ -233,13 +233,13 @@ div.clickable a {
 
 #presentation {
   margin: auto;
-  width: 600px;
+  width: 580px;
 }
 
 #presentation img {
   float: left;
   margin-right: 13px;
-  margin-bottom: 9px;
+  margin-bottom: 15px;
 }
 
 #blackswitch {
