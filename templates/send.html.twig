@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Contactez-nous{% endblock %}
+{% set menu = 'contact' %}
+
+{% block content %}
+<div class="alert alert-success">
+    Votre message a été correctement envoyé. Nous vous recontacterons dans les plus brefs délais.
+</div>
+
+<p class="text-center">
+    <a class="btn" href="{{ path('contact') }}">Retourner au formulaire de contact</a>
+</p>
+{% endblock %}

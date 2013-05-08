@@ -56,7 +56,7 @@ EOF;
 
     $app['mailer']->send($message);
 
-    return new Response('Merci pour votre message.', 201);
+    return $app['twig']->render('send.html.twig');
 })
 ->bind('send_mail')
 ;
