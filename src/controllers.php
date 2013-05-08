@@ -30,6 +30,37 @@ $app->get('/contact', function() use ($app) {
 ->bind('contact')
 ;
 
+// Send mail
+$app->post('/send', function() use ($app) {
+    $request = $app['request'];
+    $template = <<<EOF
+Nouveau message de {{ nom }}.
+Cette personne a choisis la solution {{ solution }}.
+
+{{ message }}
+--
+Message automatique.
+EOF;
+
+    $body = strtr($template,array(
+        '{{ nom }}' => $request->get('name'),
+        '{{ solution }}' => $request->get('solution'),
+        '{{ message }}' => $request->get('message'),
+    ));
+
+    $message = \Swift_Message::newInstance()
+        ->setSubject('[TCS] Message')
+        ->setFrom(array($request->get('email')))
+        ->setTo(array('mewt.fr@gmail.com'))
+        ->setBody($body);
+
+    $app['mailer']->send($message);
+
+    return new Response('Merci pour votre message.', 201);
+})
+->bind('send_mail')
+;
+
 // Prix installations physique
 $app->get('/architecture/prix', function() use ($app) {
     return $app['twig']->render('archi-prix.html.twig');

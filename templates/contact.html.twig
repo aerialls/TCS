@@ -5,27 +5,33 @@
 {% block content %}
 <h3>Contactez-nous</h3>
 
-<form class="form-horizontal">
+<form class="form-horizontal" action="{{ path('send_mail') }}" method="post">
     <div class="control-group">
         <label class="control-label" for="name">Nom</label>
         <div class="controls">
-            <input type="text" id="name" placeholder="Votre nom et prénom">
+            <input type="text" id="name" name="name" placeholder="Votre nom et prénom">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="email">Adresse mail</label>
+        <div class="controls">
+            <input type="email" id="email" name="email" placeholder="Votre adresse mail">
         </div>
     </div>
     <div class="control-group">
         <label class="control-label" for="solution">Solution</label>
         <div class="controls">
-            <select>
-                <option>Solution low-cost</option>
-                <option>Solution qualité/prix</option>
-                <option>Solution premium</option>
+            <select id="solution" name="solution">
+                <option value="low-cost">Solution low-cost</option>
+                <option value="qualite">Solution qualité/prix</option>
+                <option value="premium">Solution premium</option>
             </select>
         </div>
     </div>
     <div class="control-group">
         <label class="control-label" for="message">Message</label>
         <div class="controls">
-            <textarea style="width:500px; height: 200px;"></textarea>
+            <textarea style="width:500px; height: 200px;" id="message" name="message"></textarea>
         </div>
     </div>
     <div class="form-actions">
