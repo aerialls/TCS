@@ -36,6 +36,10 @@ body {
   background-color: #fcfcfc;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Asap";
+}
+
 .container {
   margin: 0 auto;
   max-width: 1000px;
@@ -257,4 +261,20 @@ div.clickable a {
 
 .btn-download {
   margin-top: 20px;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  border-radius: 100px;
+}
+
+.member .name {
+  font-weight: bold;
+  font-family: "Asap";
+  font-size: 22px;
+  text-align: center;
+  margin-top: 10px;
 }
