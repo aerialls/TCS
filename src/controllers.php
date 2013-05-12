@@ -93,10 +93,10 @@ $app->get('/solutions/premium', function() use ($app) {
 ->bind('solution_premium')
 ;
 
-$app->get('/repartiteur/{id}', function($id) use ($app) {
-    return $app['twig']->render('repartiteur-'.$id.'.html.twig');
+$app->get('/local/{id}', function($id) use ($app) {
+    return $app['twig']->render('local-'.$id.'.html.twig');
 })
-->bind('repartiteur')
+->bind('local')
 ;
 
 $app->error(function (\Exception $e, $code) use ($app) {
