@@ -1,7 +1,87 @@
 {% extends 'layout.html.twig' %}
 
 {% set menu = 'solutions' %}
+{% block title %}Solution premium{% endblock %}
 
 {% block content %}
 <h3>Solution premium</h3>
+
+<p>
+    Vous ne voulez plus vous poser des questions sur votre système pendant
+    longtemps ? Très longtemps ? Cette solution est la vôtre ! Nos experts ont pensé
+    à tout dans les moindres détails. Cette solution combine la sécurité ultime avec
+    les dernières technologies disponibles.
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Section</th>
+            <th>Prix</th>
+            <th>Prix/mois</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong><a href="{{ path('archi_prix') }}">Architecture</a></strong></td>
+            <td>8 642 556,78 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>WAN</strong></td>
+            <td>17 560 &euro;</td>
+            <td>14 036 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Active Directory et RDS</strong></td>
+            <td>966 968,37 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Serveurs</strong></td>
+            <td>1 320 210 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Stockage</strong></td>
+            <td>276 393 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Sécurité</strong></td>
+            <td>18 300 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Téléphonie</strong></td>
+            <td>0 &euro;</td>
+            <td>1 883,2 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Messagerie</strong></td>
+            <td>1 009 451,02 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Installation</strong></td>
+            <td>571 200 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Bureau d'étude</strong></td>
+            <td>76 800 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr>
+            <td><strong>Services supplémentaires</strong></td>
+            <td>671 571,24 &euro;</td>
+            <td>0 &euro;</td>
+        </tr>
+        <tr class="warning">
+            <td><strong>Total</strong></td>
+            <td><span class="price">13 697 540,58 &euro;</span></td>
+            <td><span class="price">15 919,2 &euro;</span></td>
+        </tr>
+    </tbody>
+</table>
 {% endblock %}

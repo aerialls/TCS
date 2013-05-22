@@ -1,5 +1,7 @@
 {% extends 'architecture.html.twig' %}
 
+{% block title %}Prix de l'architecture pour une école{% endblock %}
+
 {% block subcontent %}
 <h3>Prix de l'architecture pour une école</h3>
 
@@ -468,32 +470,4 @@
         </tr>
     </tbody>
 </table>
-
-<h3>Prix de l'architecture total</h3>
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th width="550px">Matériel</th>
-            <th>Prix unitaire</th>
-            <th>Unité</th>
-            <th>Total</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Architecture d'une école</td>
-            <td>{{ calc_get('subtotal') }}</td>
-            <td>11</td>
-            <td>{{ calc_add('total', 11 * calc_get_raw('subtotal')) }}</td>
-        </tr>
-        <tr class="warning">
-            <td><strong>Total</strong></td>
-            <td></td>
-            <td></td>
-            <td><span class="price">{{ calc_get('total') }}</span></td>
-        </tr>
-    </tbody>
-</table>
-
 {% endblock %}
