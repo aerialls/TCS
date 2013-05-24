@@ -260,7 +260,11 @@ div.clickable a {
 }
 
 .btn-download {
-  margin-top: 20px;
+  text-align: right;
+}
+
+.btn-second {
+  margin-top: 7px;
 }
 
 .member {
